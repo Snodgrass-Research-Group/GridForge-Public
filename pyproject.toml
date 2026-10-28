@@ -1,0 +1,39 @@
+[project]
+name = "gridforge"
+version = "0.1.0"
+description = "Synthetic transmission-grid generator (FLO-Grid topology builder + SCALE-Grid conductor sizing), Python conversion of the Snodgrass dissertation MATLAB codebase"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [{ name = "Jonathan Snodgrass", email = "snodgrass@tamu.edu" }]
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.12",
+    "pandas>=2.2",
+    "pyarrow>=15.0",       # parquet data store
+    "networkx>=3.2",       # graph checks (connectivity, components)
+    "matplotlib>=3.8",     # result plots (Agg backend safe)
+    "gurobipy>=11.0",      # LP/QP/MILP solver (academic license)
+    "openpyxl>=3.1",       # Excel report writers / GeneratorImport.xlsx
+    "psutil>=5.9",         # machine sizing for Gurobi Threads/MemLimit
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.4"]
+
+[project.scripts]
+gridforge = "gridforge.core:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/gridforge"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

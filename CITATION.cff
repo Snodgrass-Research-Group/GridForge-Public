@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use GridForge or the networks it builds, please cite the paper below."
+title: "GridForge"
+type: software
+license: MIT
+repository-code: "https://github.com/Snodgrass-Research-Group/GridForge-Public"
+authors:
+  - family-names: Snodgrass
+    given-names: Jonathan M.
+    orcid: "https://orcid.org/0000-0003-2305-8136"
+preferred-citation:
+  type: article
+  title: "GridForge: A Tractable, Electrical-Performance-First Method for Constructing Open, Continental-Scale Synthetic Power Grids"
+  journal: "International Journal of Electrical Power & Energy Systems"
+  status: in-preparation
+  authors:
+    - family-names: Snodgrass
+      given-names: Jonathan M.
+      orcid: "https://orcid.org/0000-0003-2305-8136"
+    - family-names: Overbye
+      given-names: Thomas J.
+      orcid: "https://orcid.org/0000-0002-2382-2811"
+    - family-names: Lesieutre
+      given-names: Bernard C.
+      orcid: "https://orcid.org/0000-0002-5274-324X"
+    - family-names: DeMarco
+      given-names: Christopher L.
+      orcid: "https://orcid.org/0000-0002-8817-9804"

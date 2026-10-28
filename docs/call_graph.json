@@ -1,0 +1,688 @@
+{
+ "generated": "2026-07-07",
+ "roots": [
+  "NationalGarverExpansion",
+  "NationalConductorSizing"
+ ],
+ "active": {
+  "ACPFLinf": {
+   "depth": 1,
+   "loc": 71,
+   "calls": [
+    "AssignCondParamFinal",
+    "NetworkStatistics"
+   ],
+   "externals": [],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\ACPFLinf.m",
+   "kvl_path": null
+  },
+  "ACPowerFlowFinal": {
+   "depth": 1,
+   "loc": 121,
+   "calls": [
+    "YBusCalc"
+   ],
+   "externals": [],
+   "kcl_path": null,
+   "kvl_path": "KCL-KVL Compliant Grid Generator\\Matlab Functions\\ACPowerFlowFinal.m"
+  },
+  "AddTransformers": {
+   "depth": 1,
+   "loc": 336,
+   "calls": [],
+   "externals": [],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\AddTransformers.m",
+   "kvl_path": "KCL-KVL Compliant Grid Generator\\Matlab Functions\\AddTransformers.m"
+  },
+  "AssignCondParamFinal": {
+   "depth": 1,
+   "loc": 42,
+   "calls": [],
+   "externals": [],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\AssignCondParamFinal.m",
+   "kvl_path": null
+  },
+  "AssignCondParamVoltage": {
+   "depth": 2,
+   "loc": 48,
+   "calls": [],
+   "externals": [],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\AssignCondParamVoltage.m",
+   "kvl_path": null
+  },
+  "AssignCondParameters": {
+   "depth": 1,
+   "loc": 46,
+   "calls": [],
+   "externals": [],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\AssignCondParameters.m",
+   "kvl_path": null
+  },
+  "BuildANet": {
+   "depth": 1,
+   "loc": 27,
+   "calls": [],
+   "externals": [],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\BuildANet.m",
+   "kvl_path": "KCL-KVL Compliant Grid Generator\\Matlab Functions\\BuildANet.m"
+  },
+  "CreateGeneratorData": {
+   "depth": 1,
+   "loc": 69,
+   "calls": [],
+   "externals": [
+    "xlsread",
+    "xlswrite"
+   ],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\CreateGeneratorData.m",
+   "kvl_path": null
+  },
+  "CreateOLMatrices": {
+   "depth": 1,
+   "loc": 186,
+   "calls": [
+    "OLPathDistances",
+    "RXB"
+   ],
+   "externals": [
+    "VChooseK"
+   ],
+   "kcl_path": null,
+   "kvl_path": "KCL-KVL Compliant Grid Generator\\Matlab Functions\\CreateOLMatrices.m"
+  },
+  "DCPF2Linf": {
+   "depth": 1,
+   "loc": 86,
+   "calls": [
+    "AssignCondParamFinal",
+    "NetworkStatistics"
+   ],
+   "externals": [],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\DCPF2Linf.m",
+   "kvl_path": null
+  },
+  "DCPFLinf": {
+   "depth": 1,
+   "loc": 129,
+   "calls": [
+    "AssignCondParameters",
+    "DCPowerFlowFinal",
+    "NetworkStatistics",
+    "RXB"
+   ],
+   "externals": [],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\DCPFLinf.m",
+   "kvl_path": null
+  },
+  "DCPowerFlowFinal": {
+   "depth": 1,
+   "loc": 92,
+   "calls": [
+    "YBusCalc"
+   ],
+   "externals": [],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\DCPowerFlowFinal.m",
+   "kvl_path": "KCL-KVL Compliant Grid Generator\\Matlab Functions\\DCPowerFlowFinal.m"
+  },
+  "EconomicDispatch": {
+   "depth": 1,
+   "loc": 11,
+   "calls": [],
+   "externals": [
+    "cplexqp"
+   ],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\EconomicDispatch.m",
+   "kvl_path": "KCL-KVL Compliant Grid Generator\\Matlab Functions\\EconomicDispatch.m"
+  },
+  "EconomicDispatchConverse": {
+   "depth": 1,
+   "loc": 26,
+   "calls": [],
+   "externals": [
+    "cplexqp"
+   ],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\EconomicDispatchConverse.m",
+   "kvl_path": "KCL-KVL Compliant Grid Generator\\Matlab Functions\\EconomicDispatchConverse.m"
+  },
+  "FiedlerPartitioning": {
+   "depth": 2,
+   "loc": 420,
+   "calls": [
+    "BuildANet",
+    "OLPathDistances"
+   ],
+   "externals": [
+    "VChooseK",
+    "eigs"
+   ],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\FiedlerPartitioning.m",
+   "kvl_path": "KCL-KVL Compliant Grid Generator\\Matlab Functions\\FiedlerPartitioning.m"
+  },
+  "GMDData": {
+   "depth": 2,
+   "loc": 60,
+   "calls": [],
+   "externals": [],
+   "kcl_path": "KCL-Compliant Grid Generator\\Homotopic Variations National\\GMDData.m",
+   "kvl_path": null
+  },
+  "GarverAlgorithmCPLEX": {
+   "depth": 1,
+   "loc": 208,
+   "calls": [
+    "LineFinder",
+    "cell2csv"
+   ],
+   "externals": [
+    "cplexlp",
+    "xlswrite"
+   ],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\GarverAlgorithmCPLEX.m",
+   "kvl_path": null
+  },
+  "GarverFinalResultsProcessing": {
+   "depth": 1,
+   "loc": 38,
+   "calls": [],
+   "externals": [],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\GarverFinalResultsProcessing.m",
+   "kvl_path": null
+  },
+  "GarverIslandConnections": {
+   "depth": 2,
+   "loc": 194,
+   "calls": [
+    "BuildANet",
+    "GarverAlgorithmCPLEX",
+    "OLPathDistances"
+   ],
+   "externals": [
+    "VChooseK"
+   ],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\GarverIslandConnections.m",
+   "kvl_path": null
+  },
+  "GenerateTargetDistribution": {
+   "depth": 1,
+   "loc": 7,
+   "calls": [],
+   "externals": [],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\GenerateTargetDistribution.m",
+   "kvl_path": null
+  },
+  "LineFinder": {
+   "depth": 1,
+   "loc": 9,
+   "calls": [],
+   "externals": [],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\LineFinder.m",
+   "kvl_path": "KCL-KVL Compliant Grid Generator\\Matlab Functions\\LineFinder.m"
+  },
+  "ManuallyAddLines": {
+   "depth": 1,
+   "loc": 67,
+   "calls": [
+    "AssignCondParamFinal",
+    "AssignCondParameters",
+    "LineFinder",
+    "OLPathDistances"
+   ],
+   "externals": [],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\ManuallyAddLines.m",
+   "kvl_path": "KCL-KVL Compliant Grid Generator\\Matlab Functions\\ManuallyAddLines.m"
+  },
+  "NationalConductorSizing": {
+   "depth": 0,
+   "loc": 1283,
+   "calls": [
+    "ACPFLinf",
+    "ACPowerFlowFinal",
+    "AddTransformers",
+    "AssignCondParamFinal",
+    "AssignCondParameters",
+    "BuildANet",
+    "CreateGeneratorData",
+    "DCPF2Linf",
+    "DCPFLinf",
+    "DCPowerFlowFinal",
+    "EconomicDispatch",
+    "EconomicDispatchConverse",
+    "GarverFinalResultsProcessing",
+    "GenerateTargetDistribution",
+    "LineFinder",
+    "ManuallyAddLines",
+    "NetworkStatistics",
+    "PlotResultsFunction",
+    "RXB",
+    "RXBFinal",
+    "SeparateNetworkVoltages",
+    "SequentialACPF_ED",
+    "SequentialACPF_ED_Angles",
+    "SequentialACPF_ED_N_1",
+    "SequentialDCPF2_ConverseED",
+    "SequentialDCPF2_ConverseED_Angles",
+    "SequentialDCPF2_ED",
+    "SequentialDCPF2_ED_Angles",
+    "SequentialDCPF3_ConverseED",
+    "SequentialDCPF3_ED",
+    "SequentialDCPF_ConverseED",
+    "SequentialDCPF_ConverseED_Angles",
+    "SequentialDCPF_ConverseED_GenLinesN_1",
+    "SequentialDCPF_ED",
+    "SequentialDCPF_ED_Angles",
+    "SequentialDCPF_ED_GenLinesN_1",
+    "SequentialDCPF_ED_GenN_1",
+    "UCED",
+    "cell2csv"
+   ],
+   "externals": [
+    "xlswrite"
+   ],
+   "kcl_path": "KCL-Compliant Grid Generator\\NationalConductorSizing.m",
+   "kvl_path": null
+  },
+  "NationalGarverExpansion": {
+   "depth": 0,
+   "loc": 463,
+   "calls": [
+    "BuildANet",
+    "CreateGeneratorData",
+    "CreateOLMatrices",
+    "EconomicDispatch",
+    "EconomicDispatchConverse",
+    "GarverAlgorithmCPLEX",
+    "OLPathDistances",
+    "TrimGarverLines",
+    "UCED",
+    "cell2csv"
+   ],
+   "externals": [
+    "VChooseK",
+    "xlswrite"
+   ],
+   "kcl_path": "KCL-Compliant Grid Generator\\NationalGarverExpansion.m",
+   "kvl_path": null
+  },
+  "NetworkStatistics": {
+   "depth": 1,
+   "loc": 41,
+   "calls": [],
+   "externals": [],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\NetworkStatistics.m",
+   "kvl_path": "KCL-KVL Compliant Grid Generator\\Matlab Functions\\NetworkStatistics.m"
+  },
+  "OLPathDistances": {
+   "depth": 1,
+   "loc": 20,
+   "calls": [],
+   "externals": [],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\OLPathDistances.m",
+   "kvl_path": "KCL-KVL Compliant Grid Generator\\Matlab Functions\\OLPathDistances.m"
+  },
+  "PartitionProcessing": {
+   "depth": 2,
+   "loc": 188,
+   "calls": [
+    "BuildANet",
+    "FiedlerPartitioning",
+    "OLPathDistances"
+   ],
+   "externals": [
+    "VChooseK"
+   ],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\PartitionProcessing.m",
+   "kvl_path": null
+  },
+  "PlotResultsFunction": {
+   "depth": 1,
+   "loc": 718,
+   "calls": [],
+   "externals": [],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\PlotResultsFunction.m",
+   "kvl_path": "KCL-KVL Compliant Grid Generator\\Matlab Functions\\PlotResultsFunction.m"
+  },
+  "RXB": {
+   "depth": 1,
+   "loc": 44,
+   "calls": [
+    "GMDData"
+   ],
+   "externals": [],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\RXB.m",
+   "kvl_path": "KCL-KVL Compliant Grid Generator\\Matlab Functions\\RXB.m"
+  },
+  "RXBFinal": {
+   "depth": 1,
+   "loc": 56,
+   "calls": [
+    "GMDData"
+   ],
+   "externals": [],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\RXBFinal.m",
+   "kvl_path": null
+  },
+  "SaveWritePartitions": {
+   "depth": 2,
+   "loc": 46,
+   "calls": [],
+   "externals": [
+    "xlswrite"
+   ],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\SaveWritePartitions.m",
+   "kvl_path": "KCL-KVL Compliant Grid Generator\\Matlab Functions\\SaveWritePartitions.m"
+  },
+  "SeparateNetworkVoltages": {
+   "depth": 1,
+   "loc": 1424,
+   "calls": [
+    "AssignCondParamVoltage",
+    "BuildANet",
+    "FiedlerPartitioning",
+    "GarverIslandConnections",
+    "PartitionProcessing",
+    "SaveWritePartitions"
+   ],
+   "externals": [
+    "xlswrite"
+   ],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\SeparateNetworkVoltages.m",
+   "kvl_path": null
+  },
+  "SequentialACPF_ED": {
+   "depth": 1,
+   "loc": 168,
+   "calls": [
+    "ACPowerFlowFinal",
+    "RXBFinal"
+   ],
+   "externals": [],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\SequentialACPF_ED.m",
+   "kvl_path": null
+  },
+  "SequentialACPF_ED_Angles": {
+   "depth": 1,
+   "loc": 63,
+   "calls": [
+    "ACPowerFlowFinal",
+    "AssignCondParamFinal",
+    "RXBFinal"
+   ],
+   "externals": [],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\SequentialACPF_ED_Angles.m",
+   "kvl_path": null
+  },
+  "SequentialACPF_ED_N_1": {
+   "depth": 1,
+   "loc": 156,
+   "calls": [
+    "ACPowerFlowFinal",
+    "AssignCondParamFinal",
+    "RXBFinal"
+   ],
+   "externals": [],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\SequentialACPF_ED_N_1.m",
+   "kvl_path": null
+  },
+  "SequentialDCPF2_ConverseED": {
+   "depth": 1,
+   "loc": 219,
+   "calls": [
+    "DCPowerFlowFinal",
+    "RXBFinal"
+   ],
+   "externals": [],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\SequentialDCPF2_ConverseED.m",
+   "kvl_path": null
+  },
+  "SequentialDCPF2_ConverseED_Angles": {
+   "depth": 1,
+   "loc": 64,
+   "calls": [
+    "AssignCondParamFinal",
+    "DCPowerFlowFinal",
+    "RXBFinal"
+   ],
+   "externals": [],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\SequentialDCPF2_ConverseED_Angles.m",
+   "kvl_path": null
+  },
+  "SequentialDCPF2_ED": {
+   "depth": 1,
+   "loc": 220,
+   "calls": [
+    "DCPowerFlowFinal",
+    "RXBFinal"
+   ],
+   "externals": [],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\SequentialDCPF2_ED.m",
+   "kvl_path": null
+  },
+  "SequentialDCPF2_ED_Angles": {
+   "depth": 1,
+   "loc": 65,
+   "calls": [
+    "AssignCondParamFinal",
+    "DCPowerFlowFinal",
+    "RXBFinal"
+   ],
+   "externals": [],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\SequentialDCPF2_ED_Angles.m",
+   "kvl_path": null
+  },
+  "SequentialDCPF3_ConverseED": {
+   "depth": 1,
+   "loc": 173,
+   "calls": [
+    "AssignCondParamFinal",
+    "DCPowerFlowFinal",
+    "RXBFinal"
+   ],
+   "externals": [],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\SequentialDCPF3_ConverseED.m",
+   "kvl_path": null
+  },
+  "SequentialDCPF3_ED": {
+   "depth": 1,
+   "loc": 183,
+   "calls": [
+    "AssignCondParamFinal",
+    "DCPowerFlowFinal",
+    "RXBFinal"
+   ],
+   "externals": [],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\SequentialDCPF3_ED.m",
+   "kvl_path": null
+  },
+  "SequentialDCPF_ConverseED": {
+   "depth": 1,
+   "loc": 184,
+   "calls": [
+    "DCPowerFlowFinal",
+    "NetworkStatistics",
+    "RXB"
+   ],
+   "externals": [],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\SequentialDCPF_ConverseED.m",
+   "kvl_path": null
+  },
+  "SequentialDCPF_ConverseED_Angles": {
+   "depth": 1,
+   "loc": 46,
+   "calls": [
+    "AssignCondParameters",
+    "DCPowerFlowFinal",
+    "RXB"
+   ],
+   "externals": [],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\SequentialDCPF_ConverseED_Angles.m",
+   "kvl_path": null
+  },
+  "SequentialDCPF_ConverseED_GenLinesN_1": {
+   "depth": 1,
+   "loc": 142,
+   "calls": [
+    "AssignCondParameters",
+    "DCPowerFlowFinal",
+    "RXB"
+   ],
+   "externals": [],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\SequentialDCPF_ConverseED_GenLinesN_1.m",
+   "kvl_path": null
+  },
+  "SequentialDCPF_ED": {
+   "depth": 1,
+   "loc": 238,
+   "calls": [
+    "DCPowerFlowFinal",
+    "NetworkStatistics",
+    "RXB"
+   ],
+   "externals": [],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\SequentialDCPF_ED.m",
+   "kvl_path": null
+  },
+  "SequentialDCPF_ED_Angles": {
+   "depth": 1,
+   "loc": 47,
+   "calls": [
+    "AssignCondParameters",
+    "DCPowerFlowFinal",
+    "RXB"
+   ],
+   "externals": [],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\SequentialDCPF_ED_Angles.m",
+   "kvl_path": null
+  },
+  "SequentialDCPF_ED_GenLinesN_1": {
+   "depth": 1,
+   "loc": 143,
+   "calls": [
+    "AssignCondParameters",
+    "DCPowerFlowFinal",
+    "NetworkStatistics",
+    "RXB"
+   ],
+   "externals": [],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\SequentialDCPF_ED_GenLinesN_1.m",
+   "kvl_path": null
+  },
+  "SequentialDCPF_ED_GenN_1": {
+   "depth": 1,
+   "loc": 152,
+   "calls": [
+    "AssignCondParameters",
+    "DCPowerFlowFinal",
+    "EconomicDispatch",
+    "RXB",
+    "UCED"
+   ],
+   "externals": [],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\SequentialDCPF_ED_GenN_1.m",
+   "kvl_path": null
+  },
+  "TrimGarverLines": {
+   "depth": 1,
+   "loc": 44,
+   "calls": [],
+   "externals": [],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\TrimGarverLines.m",
+   "kvl_path": null
+  },
+  "UCED": {
+   "depth": 1,
+   "loc": 19,
+   "calls": [],
+   "externals": [
+    "cplexqp"
+   ],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\UCED.m",
+   "kvl_path": "KCL-KVL Compliant Grid Generator\\Matlab Functions\\UCED.m"
+  },
+  "YBusCalc": {
+   "depth": 2,
+   "loc": 32,
+   "calls": [],
+   "externals": [],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\YBusCalc.m",
+   "kvl_path": "KCL-KVL Compliant Grid Generator\\Matlab Functions\\YBusCalc.m"
+  },
+  "cell2csv": {
+   "depth": 1,
+   "loc": 85,
+   "calls": [],
+   "externals": [],
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\cell2csv.m",
+   "kvl_path": "KCL-KVL Compliant Grid Generator\\Matlab Functions\\cell2csv.m"
+  }
+ },
+ "orphans": {
+  "GarverAlgorithmCPLEXV2": {
+   "loc": 198,
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\GarverAlgorithmCPLEXV2.m"
+  },
+  "GarverAlgorithmCPLEXV3": {
+   "loc": 209,
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\GarverAlgorithmCPLEXV3.m"
+  },
+  "GarverDCPFAlgorithmCPLEX": {
+   "loc": 465,
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\GarverDCPFAlgorithmCPLEX.m"
+  },
+  "GarverParameters": {
+   "loc": 8,
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\GarverParameters.m"
+  },
+  "NationalConductorSizingLinux": {
+   "loc": 1118,
+   "kcl_path": "KCL-Compliant Grid Generator\\NationalConductorSizingLinux.m"
+  },
+  "NationalGarverExpansionLinux": {
+   "loc": 470,
+   "kcl_path": "KCL-Compliant Grid Generator\\NationalGarverExpansionLinux.m"
+  },
+  "PartitionSizeProcessing": {
+   "loc": 35,
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\PartitionSizeProcessing.m"
+  },
+  "PlotResultsFunctionOLD": {
+   "loc": 712,
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\PlotResultsFunctionOLD.m"
+  },
+  "ProcessGenLines": {
+   "loc": 74,
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\ProcessGenLines.m"
+  },
+  "RXBFinalOLD": {
+   "loc": 55,
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\RXBFinalOLD.m"
+  },
+  "SequentialDCPF2_EDLimitDist": {
+   "loc": 231,
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\SequentialDCPF2_EDLimitDist.m"
+  },
+  "SimplePowerFlow": {
+   "loc": 8,
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\SimplePowerFlow.m"
+  },
+  "SubstationAssignmentScott": {
+   "loc": 248,
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\SubstationAssignmentScott.m"
+  },
+  "UCEDConverse": {
+   "loc": 19,
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\UCEDConverse.m"
+  },
+  "UCEDGarver": {
+   "loc": 27,
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\UCEDGarver.m"
+  },
+  "WritingCSVFiles": {
+   "loc": 26,
+   "kcl_path": "KCL-Compliant Grid Generator\\Matlab Functions\\WritingCSVFiles.m"
+  },
+  "test": {
+   "loc": 463,
+   "kcl_path": "KCL-Compliant Grid Generator\\test.m"
+  }
+ }
+}

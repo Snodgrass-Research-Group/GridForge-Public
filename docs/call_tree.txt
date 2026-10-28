@@ -1,0 +1,252 @@
+# GridForge MATLAB call tree  (generated 2026-07-07)
+# Format: indentation = call depth; (N loc) = lines of code;
+#   [BOTH-FOLDERS] = exists in KCL and KCL-KVL folders (KVL authoritative);
+#   [KVL-ONLY] = only in KCL-KVL folder; (^ repeat) = subtree shown above;
+#   ext: = external/toolbox dependencies.
+
+NationalGarverExpansion (463 loc)  [ext:VChooseK,xlswrite]
+    BuildANet (27 loc)  [BOTH-FOLDERS]
+    CreateGeneratorData (69 loc)  [ext:xlsread,xlswrite]
+    CreateOLMatrices (186 loc)  [KVL-ONLY; ext:VChooseK]
+        OLPathDistances (20 loc)  [BOTH-FOLDERS]
+        RXB (44 loc)  [BOTH-FOLDERS]
+            GMDData (60 loc)
+    EconomicDispatch (11 loc)  [BOTH-FOLDERS; ext:cplexqp]
+    EconomicDispatchConverse (26 loc)  [BOTH-FOLDERS; ext:cplexqp]
+    GarverAlgorithmCPLEX (208 loc)  [ext:cplexlp,xlswrite]
+        LineFinder (9 loc)  [BOTH-FOLDERS]
+        cell2csv (85 loc)  [BOTH-FOLDERS]
+    OLPathDistances (20 loc)  [BOTH-FOLDERS]
+    TrimGarverLines (44 loc)
+    UCED (19 loc)  [BOTH-FOLDERS; ext:cplexqp]
+    cell2csv (85 loc)  [BOTH-FOLDERS]
+
+NationalConductorSizing (1283 loc)  [ext:xlswrite]
+    ACPFLinf (71 loc)
+        AssignCondParamFinal (42 loc)
+        NetworkStatistics (41 loc)  [BOTH-FOLDERS]
+    ACPowerFlowFinal (121 loc)  [KVL-ONLY]
+        YBusCalc (32 loc)  [BOTH-FOLDERS]
+    AddTransformers (336 loc)  [BOTH-FOLDERS]
+    AssignCondParamFinal (42 loc)
+    AssignCondParameters (46 loc)
+    BuildANet (27 loc)  [BOTH-FOLDERS]
+    CreateGeneratorData (69 loc)  [ext:xlsread,xlswrite]
+    DCPF2Linf (86 loc)
+        AssignCondParamFinal (42 loc)
+        NetworkStatistics (41 loc)  [BOTH-FOLDERS]
+    DCPFLinf (129 loc)
+        AssignCondParameters (46 loc)
+        DCPowerFlowFinal (92 loc)  [BOTH-FOLDERS]
+            YBusCalc (32 loc)  [BOTH-FOLDERS]
+        NetworkStatistics (41 loc)  [BOTH-FOLDERS]
+        RXB (44 loc)  [BOTH-FOLDERS]
+            GMDData (60 loc)
+    DCPowerFlowFinal (92 loc)  [BOTH-FOLDERS]
+        YBusCalc (32 loc)  [BOTH-FOLDERS]
+    EconomicDispatch (11 loc)  [BOTH-FOLDERS; ext:cplexqp]
+    EconomicDispatchConverse (26 loc)  [BOTH-FOLDERS; ext:cplexqp]
+    GarverFinalResultsProcessing (38 loc)
+    GenerateTargetDistribution (7 loc)
+    LineFinder (9 loc)  [BOTH-FOLDERS]
+    ManuallyAddLines (67 loc)  [BOTH-FOLDERS]
+        AssignCondParamFinal (42 loc)
+        AssignCondParameters (46 loc)
+        LineFinder (9 loc)  [BOTH-FOLDERS]
+        OLPathDistances (20 loc)  [BOTH-FOLDERS]
+    NetworkStatistics (41 loc)  [BOTH-FOLDERS]
+    PlotResultsFunction (718 loc)  [BOTH-FOLDERS]
+    RXB (44 loc)  [BOTH-FOLDERS]
+        GMDData (60 loc)
+    RXBFinal (56 loc)
+        GMDData (60 loc)
+    SeparateNetworkVoltages (1424 loc)  [ext:xlswrite]
+        AssignCondParamVoltage (48 loc)
+        BuildANet (27 loc)  [BOTH-FOLDERS]
+        FiedlerPartitioning (420 loc)  [BOTH-FOLDERS; ext:VChooseK,eigs]
+            BuildANet (27 loc)  [BOTH-FOLDERS]
+            OLPathDistances (20 loc)  [BOTH-FOLDERS]
+        GarverIslandConnections (194 loc)  [ext:VChooseK]
+            BuildANet (27 loc)  [BOTH-FOLDERS]
+            GarverAlgorithmCPLEX (208 loc)  [ext:cplexlp,xlswrite]
+                LineFinder (9 loc)  [BOTH-FOLDERS]
+                cell2csv (85 loc)  [BOTH-FOLDERS]
+            OLPathDistances (20 loc)  [BOTH-FOLDERS]
+        PartitionProcessing (188 loc)  [ext:VChooseK]
+            BuildANet (27 loc)  [BOTH-FOLDERS]
+            FiedlerPartitioning (420 loc)  [BOTH-FOLDERS; ext:VChooseK,eigs]
+                BuildANet (27 loc)  [BOTH-FOLDERS]
+                OLPathDistances (20 loc)  [BOTH-FOLDERS]
+            OLPathDistances (20 loc)  [BOTH-FOLDERS]
+        SaveWritePartitions (46 loc)  [BOTH-FOLDERS; ext:xlswrite]
+    SequentialACPF_ED (168 loc)
+        ACPowerFlowFinal (121 loc)  [KVL-ONLY]
+            YBusCalc (32 loc)  [BOTH-FOLDERS]
+        RXBFinal (56 loc)
+            GMDData (60 loc)
+    SequentialACPF_ED_Angles (63 loc)
+        ACPowerFlowFinal (121 loc)  [KVL-ONLY]
+            YBusCalc (32 loc)  [BOTH-FOLDERS]
+        AssignCondParamFinal (42 loc)
+        RXBFinal (56 loc)
+            GMDData (60 loc)
+    SequentialACPF_ED_N_1 (156 loc)
+        ACPowerFlowFinal (121 loc)  [KVL-ONLY]
+            YBusCalc (32 loc)  [BOTH-FOLDERS]
+        AssignCondParamFinal (42 loc)
+        RXBFinal (56 loc)
+            GMDData (60 loc)
+    SequentialDCPF2_ConverseED (219 loc)
+        DCPowerFlowFinal (92 loc)  [BOTH-FOLDERS]
+            YBusCalc (32 loc)  [BOTH-FOLDERS]
+        RXBFinal (56 loc)
+            GMDData (60 loc)
+    SequentialDCPF2_ConverseED_Angles (64 loc)
+        AssignCondParamFinal (42 loc)
+        DCPowerFlowFinal (92 loc)  [BOTH-FOLDERS]
+            YBusCalc (32 loc)  [BOTH-FOLDERS]
+        RXBFinal (56 loc)
+            GMDData (60 loc)
+    SequentialDCPF2_ED (220 loc)
+        DCPowerFlowFinal (92 loc)  [BOTH-FOLDERS]
+            YBusCalc (32 loc)  [BOTH-FOLDERS]
+        RXBFinal (56 loc)
+            GMDData (60 loc)
+    SequentialDCPF2_ED_Angles (65 loc)
+        AssignCondParamFinal (42 loc)
+        DCPowerFlowFinal (92 loc)  [BOTH-FOLDERS]
+            YBusCalc (32 loc)  [BOTH-FOLDERS]
+        RXBFinal (56 loc)
+            GMDData (60 loc)
+    SequentialDCPF3_ConverseED (173 loc)
+        AssignCondParamFinal (42 loc)
+        DCPowerFlowFinal (92 loc)  [BOTH-FOLDERS]
+            YBusCalc (32 loc)  [BOTH-FOLDERS]
+        RXBFinal (56 loc)
+            GMDData (60 loc)
+    SequentialDCPF3_ED (183 loc)
+        AssignCondParamFinal (42 loc)
+        DCPowerFlowFinal (92 loc)  [BOTH-FOLDERS]
+            YBusCalc (32 loc)  [BOTH-FOLDERS]
+        RXBFinal (56 loc)
+            GMDData (60 loc)
+    SequentialDCPF_ConverseED (184 loc)
+        DCPowerFlowFinal (92 loc)  [BOTH-FOLDERS]
+            YBusCalc (32 loc)  [BOTH-FOLDERS]
+        NetworkStatistics (41 loc)  [BOTH-FOLDERS]
+        RXB (44 loc)  [BOTH-FOLDERS]
+            GMDData (60 loc)
+    SequentialDCPF_ConverseED_Angles (46 loc)
+        AssignCondParameters (46 loc)
+        DCPowerFlowFinal (92 loc)  [BOTH-FOLDERS]
+            YBusCalc (32 loc)  [BOTH-FOLDERS]
+        RXB (44 loc)  [BOTH-FOLDERS]
+            GMDData (60 loc)
+    SequentialDCPF_ConverseED_GenLinesN_1 (142 loc)
+        AssignCondParameters (46 loc)
+        DCPowerFlowFinal (92 loc)  [BOTH-FOLDERS]
+            YBusCalc (32 loc)  [BOTH-FOLDERS]
+        RXB (44 loc)  [BOTH-FOLDERS]
+            GMDData (60 loc)
+    SequentialDCPF_ED (238 loc)
+        DCPowerFlowFinal (92 loc)  [BOTH-FOLDERS]
+            YBusCalc (32 loc)  [BOTH-FOLDERS]
+        NetworkStatistics (41 loc)  [BOTH-FOLDERS]
+        RXB (44 loc)  [BOTH-FOLDERS]
+            GMDData (60 loc)
+    SequentialDCPF_ED_Angles (47 loc)
+        AssignCondParameters (46 loc)
+        DCPowerFlowFinal (92 loc)  [BOTH-FOLDERS]
+            YBusCalc (32 loc)  [BOTH-FOLDERS]
+        RXB (44 loc)  [BOTH-FOLDERS]
+            GMDData (60 loc)
+    SequentialDCPF_ED_GenLinesN_1 (143 loc)
+        AssignCondParameters (46 loc)
+        DCPowerFlowFinal (92 loc)  [BOTH-FOLDERS]
+            YBusCalc (32 loc)  [BOTH-FOLDERS]
+        NetworkStatistics (41 loc)  [BOTH-FOLDERS]
+        RXB (44 loc)  [BOTH-FOLDERS]
+            GMDData (60 loc)
+    SequentialDCPF_ED_GenN_1 (152 loc)
+        AssignCondParameters (46 loc)
+        DCPowerFlowFinal (92 loc)  [BOTH-FOLDERS]
+            YBusCalc (32 loc)  [BOTH-FOLDERS]
+        EconomicDispatch (11 loc)  [BOTH-FOLDERS; ext:cplexqp]
+        RXB (44 loc)  [BOTH-FOLDERS]
+            GMDData (60 loc)
+        UCED (19 loc)  [BOTH-FOLDERS; ext:cplexqp]
+    UCED (19 loc)  [BOTH-FOLDERS; ext:cplexqp]
+    cell2csv (85 loc)  [BOTH-FOLDERS]
+
+# --- FLAT ADJACENCY (caller -> callees) ---
+NationalConductorSizing [depth 0] -> ACPFLinf, ACPowerFlowFinal, AddTransformers, AssignCondParamFinal, AssignCondParameters, BuildANet, CreateGeneratorData, DCPF2Linf, DCPFLinf, DCPowerFlowFinal, EconomicDispatch, EconomicDispatchConverse, GarverFinalResultsProcessing, GenerateTargetDistribution, LineFinder, ManuallyAddLines, NetworkStatistics, PlotResultsFunction, RXB, RXBFinal, SeparateNetworkVoltages, SequentialACPF_ED, SequentialACPF_ED_Angles, SequentialACPF_ED_N_1, SequentialDCPF2_ConverseED, SequentialDCPF2_ConverseED_Angles, SequentialDCPF2_ED, SequentialDCPF2_ED_Angles, SequentialDCPF3_ConverseED, SequentialDCPF3_ED, SequentialDCPF_ConverseED, SequentialDCPF_ConverseED_Angles, SequentialDCPF_ConverseED_GenLinesN_1, SequentialDCPF_ED, SequentialDCPF_ED_Angles, SequentialDCPF_ED_GenLinesN_1, SequentialDCPF_ED_GenN_1, UCED, cell2csv
+NationalGarverExpansion [depth 0] -> BuildANet, CreateGeneratorData, CreateOLMatrices, EconomicDispatch, EconomicDispatchConverse, GarverAlgorithmCPLEX, OLPathDistances, TrimGarverLines, UCED, cell2csv
+ACPFLinf [depth 1] -> AssignCondParamFinal, NetworkStatistics
+ACPowerFlowFinal [depth 1] -> YBusCalc
+AddTransformers [depth 1] -> (leaf)
+AssignCondParamFinal [depth 1] -> (leaf)
+AssignCondParameters [depth 1] -> (leaf)
+BuildANet [depth 1] -> (leaf)
+CreateGeneratorData [depth 1] -> (leaf)
+CreateOLMatrices [depth 1] -> OLPathDistances, RXB
+DCPF2Linf [depth 1] -> AssignCondParamFinal, NetworkStatistics
+DCPFLinf [depth 1] -> AssignCondParameters, DCPowerFlowFinal, NetworkStatistics, RXB
+DCPowerFlowFinal [depth 1] -> YBusCalc
+EconomicDispatch [depth 1] -> (leaf)
+EconomicDispatchConverse [depth 1] -> (leaf)
+GarverAlgorithmCPLEX [depth 1] -> LineFinder, cell2csv
+GarverFinalResultsProcessing [depth 1] -> (leaf)
+GenerateTargetDistribution [depth 1] -> (leaf)
+LineFinder [depth 1] -> (leaf)
+ManuallyAddLines [depth 1] -> AssignCondParamFinal, AssignCondParameters, LineFinder, OLPathDistances
+NetworkStatistics [depth 1] -> (leaf)
+OLPathDistances [depth 1] -> (leaf)
+PlotResultsFunction [depth 1] -> (leaf)
+RXB [depth 1] -> GMDData
+RXBFinal [depth 1] -> GMDData
+SeparateNetworkVoltages [depth 1] -> AssignCondParamVoltage, BuildANet, FiedlerPartitioning, GarverIslandConnections, PartitionProcessing, SaveWritePartitions
+SequentialACPF_ED [depth 1] -> ACPowerFlowFinal, RXBFinal
+SequentialACPF_ED_Angles [depth 1] -> ACPowerFlowFinal, AssignCondParamFinal, RXBFinal
+SequentialACPF_ED_N_1 [depth 1] -> ACPowerFlowFinal, AssignCondParamFinal, RXBFinal
+SequentialDCPF2_ConverseED [depth 1] -> DCPowerFlowFinal, RXBFinal
+SequentialDCPF2_ConverseED_Angles [depth 1] -> AssignCondParamFinal, DCPowerFlowFinal, RXBFinal
+SequentialDCPF2_ED [depth 1] -> DCPowerFlowFinal, RXBFinal
+SequentialDCPF2_ED_Angles [depth 1] -> AssignCondParamFinal, DCPowerFlowFinal, RXBFinal
+SequentialDCPF3_ConverseED [depth 1] -> AssignCondParamFinal, DCPowerFlowFinal, RXBFinal
+SequentialDCPF3_ED [depth 1] -> AssignCondParamFinal, DCPowerFlowFinal, RXBFinal
+SequentialDCPF_ConverseED [depth 1] -> DCPowerFlowFinal, NetworkStatistics, RXB
+SequentialDCPF_ConverseED_Angles [depth 1] -> AssignCondParameters, DCPowerFlowFinal, RXB
+SequentialDCPF_ConverseED_GenLinesN_1 [depth 1] -> AssignCondParameters, DCPowerFlowFinal, RXB
+SequentialDCPF_ED [depth 1] -> DCPowerFlowFinal, NetworkStatistics, RXB
+SequentialDCPF_ED_Angles [depth 1] -> AssignCondParameters, DCPowerFlowFinal, RXB
+SequentialDCPF_ED_GenLinesN_1 [depth 1] -> AssignCondParameters, DCPowerFlowFinal, NetworkStatistics, RXB
+SequentialDCPF_ED_GenN_1 [depth 1] -> AssignCondParameters, DCPowerFlowFinal, EconomicDispatch, RXB, UCED
+TrimGarverLines [depth 1] -> (leaf)
+UCED [depth 1] -> (leaf)
+cell2csv [depth 1] -> (leaf)
+AssignCondParamVoltage [depth 2] -> (leaf)
+FiedlerPartitioning [depth 2] -> BuildANet, OLPathDistances
+GMDData [depth 2] -> (leaf)
+GarverIslandConnections [depth 2] -> BuildANet, GarverAlgorithmCPLEX, OLPathDistances
+PartitionProcessing [depth 2] -> BuildANet, FiedlerPartitioning, OLPathDistances
+SaveWritePartitions [depth 2] -> (leaf)
+YBusCalc [depth 2] -> (leaf)
+
+# --- ORPHANED (in KCL folder, unreachable from mains) ---
+GarverAlgorithmCPLEXV2 (198 loc)
+GarverAlgorithmCPLEXV3 (209 loc)
+GarverDCPFAlgorithmCPLEX (465 loc)
+GarverParameters (8 loc)
+NationalConductorSizingLinux (1118 loc)
+NationalGarverExpansionLinux (470 loc)
+PartitionSizeProcessing (35 loc)
+PlotResultsFunctionOLD (712 loc)
+ProcessGenLines (74 loc)
+RXBFinalOLD (55 loc)
+SequentialDCPF2_EDLimitDist (231 loc)
+SimplePowerFlow (8 loc)
+SubstationAssignmentScott (248 loc)
+UCEDConverse (19 loc)
+UCEDGarver (27 loc)
+WritingCSVFiles (26 loc)
+test (463 loc)
