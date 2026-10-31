@@ -1,5 +1,7 @@
 # GridForge
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23826484.svg)](https://doi.org/10.5281/zenodo.23826484)
+
 **A synthetic transmission-grid generator.** GridForge builds realistic,
 synthetic, KCL-compliant electric transmission networks from public data
 (EIA generator fleets, FERC Form 715 line statistics, census-derived loads).
@@ -208,7 +210,8 @@ If you use GridForge or the networks it builds in published work, please cite
 the GridForge paper (Snodgrass, Overbye, Lesieutre and DeMarco,
 *International Journal of Electrical Power & Energy Systems*, in preparation).
 The full reference is in [CITATION.cff](CITATION.cff); GitHub's "Cite this
-repository" button formats it.
+repository" button formats it. Version 1.0.0 of the code is archived on Zenodo:
+[doi:10.5281/zenodo.23826484](https://doi.org/10.5281/zenodo.23826484).
 
 ## License
 

@@ -3,7 +3,8 @@ message: "If you use GridForge or the networks it builds, please cite the paper 
 title: "GridForge"
 type: software
 version: "1.0.0"
-date-released: "2026-10-30"
+date-released: "2026-10-31"
+doi: "10.5281/zenodo.23826484"
 license: MIT
 abstract: "GridForge builds synthetic, KCL-compliant electric transmission networks from public data. FLO-Grid builds the topology with a Garver-style network-flow linear program over every length-feasible substation pair, and SCALE-Grid sizes conductors, voltage levels and transformers with sequential DC power flow."
 keywords:
