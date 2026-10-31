@@ -175,7 +175,7 @@ their own terms.
 | Files | Contents | Original source |
 |---|---|---|
 | `buses_national.parquet`, `buses_regional.parquet` | Bus names, locations and loads | EIA-860 plant locations; census-derived load allocation from the EPIGRIDS project |
-| `generators_national.parquet` | Generator units, limits, fuel, cost curves | EIA-860 generator inventory; synthetic cost curves from the EPIGRIDS project (typical heat rates, EIA fuel prices, ERCOT bid data) |
+| `generators_national.parquet` | Generator units, limits, fuel, cost curves | EIA-860 generator inventory; synthetic cost curves by Sogol Babaeinejadsarookolaee for the EPIGRIDS project (2018; method in Wang et al., PSERC, 2020; typical heat rates, EIA fuel prices, ERCOT bid data) |
 | `conductors/` | Conductor catalogues per voltage variant | Dissertation tables built from Southwire ACSR ratings, LaForest (1982) reactance data and FERC Form 1 and Form 715 statistics |
 | `gmd/` | Conductor-spacing (GMD) lookup tables, in feet | Dissertation tower-geometry tables |
 | `params/` | Maximum line lengths, partition counts, target route lengths | Statistics from FERC Form 1 and Form 715 |
