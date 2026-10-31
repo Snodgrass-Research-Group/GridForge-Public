@@ -2,15 +2,24 @@ cff-version: 1.2.0
 message: "If you use GridForge or the networks it builds, please cite the paper below."
 title: "GridForge"
 type: software
+version: "1.0.0"
+date-released: "2026-10-30"
 license: MIT
+abstract: "GridForge builds synthetic, KCL-compliant electric transmission networks from public data. FLO-Grid builds the topology with a Garver-style network-flow linear program over every length-feasible substation pair, and SCALE-Grid sizes conductors, voltage levels and transformers with sequential DC power flow."
+keywords:
+  - synthetic power grids
+  - transmission network construction
+  - network-flow linear programming
+  - power system test cases
 repository-code: "https://github.com/Snodgrass-Research-Group/GridForge-Public"
 authors:
   - family-names: Snodgrass
     given-names: Jonathan M.
+    affiliation: "Texas A&M University"
     orcid: "https://orcid.org/0000-0003-2305-8136"
 preferred-citation:
   type: article
-  title: "GridForge: A Tractable, Electrical-Performance-First Method for Constructing Open, Continental-Scale Synthetic Power Grids"
+  title: "GridForge: A Tractable Network-Flow Method for Constructing Open, Continental-Scale Synthetic Power Grids"
   journal: "International Journal of Electrical Power & Energy Systems"
   status: in-preparation
   authors:

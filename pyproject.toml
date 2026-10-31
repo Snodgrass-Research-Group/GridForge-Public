@@ -1,6 +1,6 @@
 [project]
 name = "gridforge"
-version = "0.1.0"
+version = "1.0.0"
 description = "Synthetic transmission-grid generator (FLO-Grid topology builder + SCALE-Grid conductor sizing), Python conversion of the Snodgrass dissertation MATLAB codebase"
 readme = "README.md"
 requires-python = ">=3.12"

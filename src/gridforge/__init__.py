@@ -9,4 +9,4 @@ from .config import RunConfig
 from .model import GridModel
 
 __all__ = ["GridModel", "RunConfig"]
-__version__ = "0.1.0"
+__version__ = "1.0.0"
