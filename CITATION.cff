@@ -27,12 +27,9 @@ preferred-citation:
     - family-names: Snodgrass
       given-names: Jonathan M.
       orcid: "https://orcid.org/0000-0003-2305-8136"
-    - family-names: Overbye
-      given-names: Thomas J.
-      orcid: "https://orcid.org/0000-0002-2382-2811"
-    - family-names: Lesieutre
-      given-names: Bernard C.
-      orcid: "https://orcid.org/0000-0002-5274-324X"
     - family-names: DeMarco
       given-names: Christopher L.
       orcid: "https://orcid.org/0000-0002-8817-9804"
+    - family-names: Lesieutre
+      given-names: Bernard C.
+      orcid: "https://orcid.org/0000-0002-5274-324X"

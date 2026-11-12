@@ -207,7 +207,7 @@ plots are skipped.
 ## Citation
 
 If you use GridForge or the networks it builds in published work, please cite
-the GridForge paper (Snodgrass, Overbye, Lesieutre and DeMarco,
+the GridForge paper (Snodgrass, DeMarco and Lesieutre,
 *International Journal of Electrical Power & Energy Systems*, in preparation).
 The full reference is in [CITATION.cff](CITATION.cff); GitHub's "Cite this
 repository" button formats it. Version 1.0.0 of the code is archived on Zenodo:
